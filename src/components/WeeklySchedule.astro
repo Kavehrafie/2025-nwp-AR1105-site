@@ -1,0 +1,77 @@
+---
+
+import WeekItem from './WeekItem.astro';
+import { getEntry } from 'astro:content';
+
+interface Props {
+  scheduleId?: string;
+  showCategoryHeadings?: boolean;
+}
+
+const { scheduleId = 'ar1105-schedule', showCategoryHeadings = true } = Astro.props;
+
+// Get the schedule data
+const schedule = await getEntry('schedule', scheduleId);
+
+if (!schedule) {
+  throw new Error(`Schedule with id "${scheduleId}" not found`);
+}
+
+const { weeks, importantDates } = schedule.data;
+
+// Group weeks by category
+const weeksByCategory = weeks.reduce((acc, week) => {
+  const category = week.category || 'General';
+  if (!acc[category]) {
+    acc[category] = [];
+  }
+  acc[category].push(week);
+  return acc;
+}, {} as Record<string, typeof weeks>);
+---
+
+<div class="weekly-schedule">
+
+  {Object.entries(weeksByCategory).map(([category, categoryWeeks]) => (
+    <section class="category-section" data-category={category.toLowerCase().replace(/\s+/g, '-')}>
+      {showCategoryHeadings && (
+        <>
+          <h3 id={category.toLowerCase().replace(/\s+/g, '-')}>{category}</h3>
+          <a class="sl-anchor-link" href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>
+          </a>
+        </>
+      )}
+      <div class="weeks-grid">
+        {categoryWeeks
+          .sort((a, b) => a.date.getTime() - b.date.getTime())
+          .map(week => (
+            <WeekItem week={week} />
+          ))
+        }
+      </div>
+    </section>
+  ))}
+</div>
+
+<style>
+  .weekly-schedule {
+    margin: 2rem 0;
+  }
+
+  .category-section {
+    margin-bottom: 3rem;
+  }
+
+  .category-title {
+    color: var(--sl-color-accent-high);
+    border-bottom: 2px solid var(--sl-color-accent-low);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .weeks-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+</style>

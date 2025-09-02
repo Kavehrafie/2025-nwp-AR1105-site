@@ -1,0 +1,188 @@
+---
+import { Aside, type Icon } from "@astrojs/starlight/components";
+import type { ComponentProps } from "astro/types";
+
+type GradeItem = {
+  title: string;
+  weight: number;
+  description?: string;
+  due?: string;
+  icon?: ComponentProps<typeof Icon>["name"];
+};
+
+interface Props {
+  assignments: GradeItem[];
+}
+
+const { assignments } = Astro.props;
+---
+
+{
+  Boolean(assignments) ? (
+    <div class="grade-container">
+      {assignments.map((item) => (
+        <div class="grade-item">
+          <div class="grade-header">
+            <h3 class="grade-title">{item.title}</h3>
+            <div class="grade-weight">{item.weight}%</div>
+          </div>
+          {item.due && (
+            <div class="grade-due">Due: {item.due}</div>
+          )}
+          {item.description && (
+            <div class="grade-description">{item.description}</div>
+          )}
+        </div>
+      ))}
+    </div>
+  ) : (
+    <p>No items found</p>
+  )
+}
+
+{
+  assignments.reduce((acc, item) => acc + item.weight, 0) !== 100 && (
+    <Aside type="danger" title="Error">
+      <p class="title">
+        Total: {assignments.reduce((acc, item) => acc + item.weight, 0)}%
+      </p>
+      <p class="description">
+        The total weight of all grade components should equal 100%.
+      </p>
+    </Aside>
+  )
+}
+
+<style>
+  .grade-container {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .grade-item {
+    margin: 0;
+    background: var(--sl-color-bg-sidebar);
+    border: 1px solid var(--sl-color-gray-3);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .grade-item:hover {
+    border-color: var(--sl-color-accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .grade-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+
+  .grade-title {
+    font-size: var(--sl-text-lg);
+    font-weight: 600;
+    color: var(--sl-color-white);
+    margin: 0;
+  }
+
+  .grade-weight {
+    font-size: var(--sl-text-xl);
+    font-weight: 700;
+    color: var(--sl-color-accent-high);
+    background: var(--sl-color-accent-low);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    min-width: 3rem;
+    text-align: center;
+  }
+
+  .grade-due {
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-2);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+
+  .grade-description {
+    font-size: var(--sl-text-base);
+    color: var(--sl-color-gray-1);
+    line-height: 1.4;
+  }
+
+  @media (min-width: 50rem) {
+    .grade-container {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+
+  /* Printer-friendly styles - simple list format */
+  @media print {
+    .grade-container {
+      display: block;
+      margin: 1rem 0;
+    }
+
+    .grade-item {
+      background: none !important;
+      border: none;
+      padding: 0.25rem 0;
+      margin-bottom: 0.5rem;
+      box-shadow: none !important;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .grade-item:hover {
+      border-color: #ccc;
+      box-shadow: none !important;
+    }
+
+    .grade-header {
+      display: block;
+      margin-bottom: 0;
+    }
+
+    .grade-title {
+      color: #000 !important;
+      font-size: 1rem;
+      font-weight: 600;
+      display: inline;
+    }
+
+    .grade-weight {
+      color: #000 !important;
+      background: none !important;
+      border: none;
+      padding: 0;
+      border-radius: 0;
+      font-size: 1rem;
+      font-weight: 400;
+      display: inline;
+      margin-left: 0.5rem;
+    }
+
+    .grade-weight::before {
+      content: "- ";
+    }
+
+    .grade-due {
+      color: #666 !important;
+      font-size: 0.9rem;
+      margin: 0.2rem 0;
+      font-style: italic;
+    }
+
+    .grade-description {
+      color: #333 !important;
+      font-size: 0.9rem;
+      margin: 0.2rem 0;
+    }
+
+    /* Hide error aside in print */
+    .astro-aside {
+      display: none !important;
+    }
+  }
+</style>

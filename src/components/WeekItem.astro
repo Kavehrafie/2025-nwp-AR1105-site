@@ -1,0 +1,179 @@
+---
+import ReadingList from "./ReadingList.astro";
+import MediaList from "./MediaList.astro";
+import type { Week } from "../content.config";
+import { Badge } from "@astrojs/starlight/components";
+
+interface Props {
+  week: Week;
+}
+
+const { week } = Astro.props;
+
+// Format date and get day of week
+const formatDate = (dateString: string | Date) => {
+  const date = new Date(dateString);
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  };
+  return date.toLocaleDateString("en-US", options);
+};
+
+const coreReadings = week.readings?.filter((r) => r.type === "core") || [];
+const analyticalReadings =
+  week.readings?.filter((r) => r.type === "analytical") || [];
+---
+
+<article class="week-item">
+  <header class="week-header">
+    <div class="week-meta"></div>
+    <h4 class="week-title">{formatDate(week.date)}: {week.title}</h4>
+    {week.description && <p class="week-topic">{week.description}</p>}
+  </header>
+
+  <div class="week-content">
+    {
+      week.learningObjectives && week.learningObjectives.length > 0 && (
+        <section class="learning-objectives">
+          <h5>Learning Objectives</h5>
+          <ul>
+            {week.learningObjectives.map((objective) => (
+              <li>{objective}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      week.keywords && week.keywords.length > 0 && (
+        <section class="key-notions">
+          <div class="notions-tags">
+            {week.keywords.map((notion) => (
+              <Badge text={notion} variant="tip" size="medium" />
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    {
+      (coreReadings.length > 0 || analyticalReadings.length > 0) && (
+        <section class="readings">
+          {coreReadings.length > 0 && (
+            <ReadingList title="Core Readings" readings={coreReadings} />
+          )}
+          {analyticalReadings.length > 0 && (
+            <ReadingList
+              title="Analytical Readings (Perusall)"
+              readings={analyticalReadings}
+            />
+          )}
+        </section>
+      )
+    }
+
+    {
+      week.media && week.media.length > 0 && (
+        <section class="media">
+          <h5>Videos & Media</h5>
+          <MediaList media={week.media} />
+        </section>
+      )
+    }
+  </div>
+</article>
+
+<style>
+  .week-item {
+    
+    border: 1px solid oklch(from var(--sl-color-gray-5) l c h /0.5);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      border: 1px solid var(--sl-color-gray-5);
+      transform: scale(1.01); 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .week-header {
+    margin-bottom: 1rem;
+    transform: scale(1.01)
+  }
+
+  .week-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-2);
+  }
+
+  .week-number {
+    font-weight: 600;
+    color: var(--sl-color-accent);
+  }
+
+  .week-date {
+    font-style: italic;
+  }
+
+  .week-title {
+    margin: 0;
+    color: var(--sl-color-white);
+    font-size: 1.2rem;
+  }
+
+  .week-topic {
+    margin: 0.5rem 0 0;
+    color: var(--sl-color-gray-2);
+    font-style: italic;
+  }
+
+  .week-content section {
+    margin-bottom: 1.5rem;
+  }
+
+  .week-content section:last-child {
+    margin-bottom: 0;
+  }
+
+  .week-content h5 {
+    margin: 0 0 0.75rem;
+    color: var(--sl-color-accent-high);
+    font-size: 1rem;
+    border-bottom: 1px solid var(--sl-color-gray-6);
+    padding-bottom: 0.25rem;
+  }
+
+  .learning-objectives ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .learning-objectives li {
+    margin-bottom: 0.5rem;
+    color: var(--sl-color-gray-1);
+  }
+
+  .notions-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .notion-tag {
+    background: var(--sl-color-accent-low);
+    color: var(--sl-color-accent-high);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+</style>

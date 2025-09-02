@@ -1,0 +1,174 @@
+{
+  "importantDates": [
+    {
+      "title": "Participation & Attendance",
+      "description": "Active participation in live Zoom sessions, including camera on, discussion contribution, and completion of in-class activities",
+      "dueDate": "2025-04-25",
+      "weight": 15
+    },
+    {
+      "title": "Reading Annotations",
+      "description": "Quality annotations on Perusall for analytical readings",
+      "dueDate": "2025-04-25",
+      "weight": 5
+    },
+    {
+      "title": "Artifacts",
+      "description": "Creative projects responding to course materials through various mediums",
+      "dueDate": "2025-04-25",
+      "weight": 25
+    },
+    {
+      "title": "Comparative Analysis",
+      "description": "Traditional essay comparing two artworks from different cultures or time periods (500-750 words)",
+      "dueDate": "2025-03-15",
+      "weight": 20
+    },
+    {
+      "title": "Ancient World in Contemporary Visual Culture",
+      "description": "Analysis of modern work drawing from ancient themes, motifs, or techniques (1000-1250 words)",
+      "dueDate": "2025-04-20",
+      "weight": 35
+    }
+  ],
+  "weeks": [
+    {
+      "date": "2025-01-13",
+      "title": "Introduction to Global Art History",
+      "category": "Week 1",
+      "description": "What is Art History and How Do We Study It Globally?",
+
+      "keywords": [
+        "Visual analysis",
+        "Art historical methods",
+        "Global perspectives",
+        "Cultural context"
+      ],
+      "readings": [
+        {
+          "title": "What is Art History?",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/what-is-art-history/",
+          "type": "core"
+        },
+        {
+          "title": "The Problem of the Global and the Local in Art History",
+          "authors": ["James Elkins"],
+          "source": "Perusall",
+          "type": "analytical",
+          "note": "Focus on pages 1-15, annotate arguments about Western vs. non-Western art history"
+        }
+      ],
+      "media": [
+        {
+          "title": "Introduction to Art History Methods",
+          "type": "video",
+          "duration": "18 mins",
+          "source": "YouTube",
+          "url": "https://www.youtube.com/watch/example",
+          "note": "Pay attention to formal analysis examples"
+        }
+      ]
+    },
+    {
+      "date": "2025-01-20",
+      "title": "Prehistoric Art: Cave Paintings to Megalithic Structures",
+      "category": "Ancient Origins",
+      "topic": "The Dawn of Human Artistic Expression",
+      "learningObjectives": [
+        "Analyze the formal qualities of Paleolithic cave paintings",
+        "Understand the cultural significance of prehistoric art",
+        "Compare different theories about the purpose of early art"
+      ],
+      "keyNotions": [
+        "Paleolithic art",
+        "Symbolic representation",
+        "Ritual and religion",
+        "Archaeological evidence"
+      ],
+      "readings": [
+        {
+          "title": "Paleolithic Art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/paleolithic-art/",
+          "type": "core"
+        },
+        {
+          "title": "Lascaux Cave Paintings",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/lascaux/",
+          "type": "core"
+        },
+        {
+          "title": "The Mind in the Cave: Art and Spirituality",
+          "authors": ["David Lewis-Williams"],
+          "source": "Perusall",
+          "type": "analytical",
+          "note": "Chapter 2: Focus on neuropsychological model of cave art"
+        }
+      ],
+      "media": [
+        {
+          "title": "Cave Art: Discovering Prehistoric Humans",
+          "type": "documentary",
+          "duration": "45 mins",
+          "source": "National Geographic",
+          "note": "Watch sections on Lascaux and Altamira"
+        },
+        {
+          "title": "Virtual Tour of Lascaux Cave",
+          "type": "video",
+          "duration": "12 mins",
+          "source": "Lascaux Official",
+          "url": "https://www.lascaux.fr/en/virtual-tour"
+        }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "date": "2025-01-27",
+      "title": "Ancient Mesopotamia: Cradle of Civilization",
+      "category": "Ancient Near East",
+      "topic": "Sumerian, Babylonian, and Assyrian Art",
+      "learningObjectives": [
+        "Identify key characteristics of Mesopotamian art and architecture",
+        "Understand the role of art in ancient Mesopotamian society",
+        "Analyze the evolution of artistic styles across different periods"
+      ],
+      "keyNotions": [
+        "Ziggurat architecture",
+        "Cuneiform writing",
+        "Divine kingship",
+        "Narrative relief sculpture"
+      ],
+      "readings": [
+        {
+          "title": "Ancient Mesopotamia",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/ancient-mesopotamia/",
+          "type": "core"
+        },
+        {
+          "title": "The Standard of Ur",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/standard-of-ur/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Mesopotamia: Return to Eden",
+          "type": "documentary",
+          "duration": "1 hour",
+          "source": "History Channel",
+          "note": "Focus on art and architecture segments"
+        }
+      ]
+    }
+  ]
+}

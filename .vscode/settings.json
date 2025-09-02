@@ -1,0 +1,7 @@
+{
+  "cssvar.files": [
+    "**/*.css",
+    "**/node_modules/@astrojs/starlight/style/*.css"
+  ],
+  "cssvar.ignore": []
+}

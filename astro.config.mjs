@@ -1,28 +1,32 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
-
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://25ar1105.kavehrafie.com',
-	integrations: [
-		starlight({
-			title: 'AR1105',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
-		}),
-	],
+  site: "https://25ar1105.kavehrafie.com",
+  integrations: [
+    starlight({
+      title: "AR1105",
+      // social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+      sidebar: [
+        {
+        	label: 'Syllabus',
+        	items: [
+        		// Each item here is one entry in the navigation menu.
+        		{ label: 'Content', slug: 'syllabus' },
+            { label: "Weekly Schedule", slug: "syllabus/timetable" }
+        	],
+        },
+        // {
+        // 	label: 'Reference',
+        // 	autogenerate: { directory: 'reference' },
+        // },
+      ],
+      components: {
+        Hero: "./src/components/Hero.astro",
+      },
+      customCss: ["./src/styles/custom.css"],
+    }),
+  ],
 });

@@ -1,0 +1,45 @@
+---
+import WeekItem from './WeekItem.astro';
+import { getEntry } from 'astro:content';
+
+interface Props {
+  category: string;
+  scheduleId?: string;
+}
+
+const { category, scheduleId = 'ar1105-schedule' } = Astro.props;
+
+// Get the schedule data
+const schedule = await getEntry('schedule', scheduleId);
+
+if (!schedule) {
+  throw new Error(`Schedule with id "${scheduleId}" not found`);
+}
+
+const { weeks } = schedule.data;
+
+// Filter weeks for this specific category
+const categoryWeeks = weeks.filter(week => (week.category || 'General') === category);
+---
+
+<section class="category-section" data-category={category.toLowerCase().replace(/\s+/g, '-')}>
+  <div class="weeks-grid">
+    {categoryWeeks
+      .sort((a, b) => a.date.getTime() - b.date.getTime())
+      .map(week => (
+        <WeekItem week={week} />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .category-section {
+    margin-bottom: 3rem;
+  }
+
+  .weeks-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+</style>

@@ -1,0 +1,134 @@
+---
+interface Props {
+  media: Array<{
+    title: string;
+    type: 'video' | 'audio' | 'documentary' | 'podcast';
+    duration?: string;
+    source?: string;
+    url?: string;
+    note?: string;
+  }>;
+}
+
+const { media } = Astro.props;
+
+const getMediaIcon = (type: string) => {
+  switch (type) {
+    case 'video': return '🎥';
+    case 'audio': return '🎵';
+    case 'documentary': return '🎬';
+    case 'podcast': return '🎧';
+    default: return '📺';
+  }
+};
+
+const getMediaTypeLabel = (type: string) => {
+  switch (type) {
+    case 'video': return 'Video';
+    case 'audio': return 'Audio';
+    case 'documentary': return 'Documentary';
+    case 'podcast': return 'Podcast';
+    default: return 'Media';
+  }
+};
+---
+
+<ul class="media-list">
+  {media.map(item => (
+    <li class="media-item">
+      <div class="media-main">
+        <span class="media-icon">{getMediaIcon(item.type)}</span>
+        <div class="media-info">
+          {item.url ? (
+            <a href={item.url} target="_blank" rel="noopener noreferrer" class="media-title">
+              {item.title}
+            </a>
+          ) : (
+            <span class="media-title">{item.title}</span>
+          )}
+          <div class="media-meta">
+            <span class="media-type">{getMediaTypeLabel(item.type)}</span>
+            {item.duration && (
+              <span class="media-duration">• {item.duration}</span>
+            )}
+            {item.source && (
+              <span class="media-source">• {item.source}</span>
+            )}
+          </div>
+        </div>
+      </div>
+      {item.note && (
+        <p set:html={item.note}></p>
+      )}
+    </li>
+  ))}
+</ul>
+
+<style>
+  .media-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .media-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--sl-color-gray-6);
+    border-radius: 6px;
+    border-left: 4px solid var(--sl-color-accent-low);
+  }
+
+  .media-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .media-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  .media-info {
+    flex: 1;
+  }
+
+  .media-title {
+    display: block;
+    font-weight: 500;
+    color: var(--sl-color-white);
+    margin-bottom: 0.25rem;
+  }
+
+  .media-title[href] {
+    color: var(--sl-color-accent);
+    text-decoration: none;
+  }
+
+  .media-title[href]:hover {
+    text-decoration: underline;
+  }
+
+  .media-meta {
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-2);
+  }
+
+  .media-type {
+    font-weight: 500;
+  }
+
+  .media-duration,
+  .media-source {
+    color: var(--sl-color-gray-3);
+  }
+
+  .media-note {
+    margin: 0.75rem 0 0 2rem;
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-1);
+    font-style: italic;
+  }
+</style>

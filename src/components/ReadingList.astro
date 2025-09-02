@@ -1,0 +1,121 @@
+---
+import { Aside } from '@astrojs/starlight/components';
+
+interface Props {
+  title: string;
+  readings: Array<{
+    title: string;
+    authors?: string[];
+    source?: string;
+    url?: string;
+    type: 'core' | 'analytical';
+    note?: string;
+  }>;
+}
+
+const { title, readings } = Astro.props;
+---
+
+<div class="reading-list">
+  <h6 class="reading-list-title">{title}</h6>
+  <ul class="readings">
+    {readings.map(reading => (
+      <li class="reading-item">
+        <div class="reading-main">
+          {reading.url ? (
+            <a href={reading.url} target="_blank" rel="noopener noreferrer" class="reading-title">
+              {reading.title}
+            </a>
+          ) : (
+            <span class="reading-title">{reading.title}</span>
+          )}
+          {reading.authors && reading.authors.length > 0 && (
+            <span class="reading-authors">
+              by {reading.authors.join(', ')}
+            </span>
+          )}
+          {reading.source && (
+            <span class="reading-source">
+              — {reading.source}
+            </span>
+          )}
+        </div>
+        {reading.note && (
+          <p set:html={reading.note}>
+          </p>
+        )}
+      </li>
+    ))}
+  </ul>
+</div>
+
+<style>
+  .reading-list {
+    margin-bottom: 1rem;
+  }
+
+  .reading-list-title {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--sl-color-gray-1);
+  }
+
+  .readings {
+    margin: 0;
+    list-style: none;
+  }
+  
+  .reading-item {
+    margin-bottom: 0.75rem;
+    position: relative;
+  }
+
+  .reading-item::before {
+    content: "📖";
+    position: absolute;
+    left: -1.6rem;
+    top: -0.4rem;
+    
+  }
+  
+  .reading-main {
+    line-height: 1.4;
+  }
+
+  .reading-title {
+    font-weight: 500;
+    color: var(--sl-color-white);
+  }
+
+  .reading-title[href] {
+    color: var(--sl-color-accent);
+    text-decoration: none;
+  }
+
+  .reading-title[href]:hover {
+    text-decoration: underline;
+  }
+
+  .reading-authors {
+    color: var(--sl-color-gray-2);
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+
+  .reading-source {
+    color: var(--sl-color-gray-3);
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+
+  .reading-note {
+    margin: 0.5rem 0 0;
+    padding: 0.5rem;
+    background: var(--sl-color-gray-6);
+    border-left: 3px solid var(--sl-color-accent-low);
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-1);
+    border-radius: 0 4px 4px 0;
+  }
+</style>
