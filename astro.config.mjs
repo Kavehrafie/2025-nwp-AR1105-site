@@ -7,7 +7,7 @@ export default defineConfig({
   site: "https://25ar1105.kavehrafie.com",
   integrations: [
     starlight({
-      title: "AR1105",
+      title: "AR1105: Intro to Global Art I",
       // social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
       sidebar: [
         {
@@ -18,6 +18,7 @@ export default defineConfig({
             { label: "Weekly Schedule", slug: "syllabus/timetable" }
         	],
         },
+        "assignments",
         // {
         // 	label: 'Reference',
         // 	autogenerate: { directory: 'reference' },

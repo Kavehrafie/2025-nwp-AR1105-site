@@ -3,5 +3,6 @@
     "**/*.css",
     "**/node_modules/@astrojs/starlight/style/*.css"
   ],
-  "cssvar.ignore": []
+  "cssvar.ignore": [],
+  "editor.wordWrap": "on"
 }

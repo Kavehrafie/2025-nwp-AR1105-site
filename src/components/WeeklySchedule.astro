@@ -19,6 +19,12 @@ if (!schedule) {
 
 const { weeks, importantDates } = schedule.data;
 
+// Helper function to create timezone-neutral dates
+const parseLocalDate = (dateString: string) => {
+  const [year, month, day] = dateString.split('-').map(Number);
+  return new Date(year, month - 1, day);
+};
+
 // Group weeks by category
 const weeksByCategory = weeks.reduce((acc, week) => {
   const category = week.category || 'General';
@@ -43,7 +49,7 @@ const weeksByCategory = weeks.reduce((acc, week) => {
       )}
       <div class="weeks-grid">
         {categoryWeeks
-          .sort((a, b) => a.date.getTime() - b.date.getTime())
+          .sort((a, b) => parseLocalDate(a.date).getTime() - parseLocalDate(b.date).getTime())
           .map(week => (
             <WeekItem week={week} />
           ))

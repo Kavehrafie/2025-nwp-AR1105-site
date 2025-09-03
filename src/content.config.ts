@@ -31,7 +31,7 @@ const MediaSchema = z.object({
 
 
 const WeekSchema = z.object({
-	date: z.coerce.date(),
+	date: z.string().regex(/^\d{4}-\d{1,2}-\d{1,2}$/), // Keep as string to avoid timezone issues
 	title: z.string(),
 	category: z.string().optional(), // "Foundations", "Ancient World", etc.
 	description: z.string().optional(),

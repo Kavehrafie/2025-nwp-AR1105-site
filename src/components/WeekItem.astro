@@ -12,7 +12,16 @@ const { week } = Astro.props;
 
 // Format date and get day of week
 const formatDate = (dateString: string | Date) => {
-  const date = new Date(dateString);
+  // Handle timezone-neutral date parsing
+  let date: Date;
+  if (typeof dateString === 'string') {
+    // Parse as local date to avoid UTC timezone shift
+    const [year, month, day] = dateString.split('-').map(Number);
+    date = new Date(year, month - 1, day); // month is 0-indexed
+  } else {
+    date = dateString;
+  }
+  
   const options: Intl.DateTimeFormatOptions = {
     weekday: "short",
     month: "short",

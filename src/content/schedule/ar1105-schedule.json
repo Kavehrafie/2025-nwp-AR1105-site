@@ -33,140 +33,856 @@
   ],
   "weeks": [
     {
-      "date": "2025-01-13",
-      "title": "Introduction to Global Art History",
-      "category": "Week 1",
-      "description": "What is Art History and How Do We Study It Globally?",
-
-      "keywords": [
-        "Visual analysis",
-        "Art historical methods",
-        "Global perspectives",
-        "Cultural context"
-      ],
-      "readings": [
-        {
-          "title": "What is Art History?",
-          "authors": ["Smarthistory Contributors"],
-          "source": "Smarthistory",
-          "url": "https://smarthistory.org/what-is-art-history/",
-          "type": "core"
-        },
-        {
-          "title": "The Problem of the Global and the Local in Art History",
-          "authors": ["James Elkins"],
-          "source": "Perusall",
-          "type": "analytical",
-          "note": "Focus on pages 1-15, annotate arguments about Western vs. non-Western art history"
-        }
-      ],
+      "date": "2025-9-3",
+      "title": "Welcome",
+      "category": "W1",
+      "description": "Welcome to Global Art History! What is Art? What does art history do?",
+      "keywords": ["art", "history", "syllabus"],
       "media": [
         {
-          "title": "Introduction to Art History Methods",
+          "title": "The Definition of Art",
           "type": "video",
-          "duration": "18 mins",
+          "duration": "14 mins",
           "source": "YouTube",
-          "url": "https://www.youtube.com/watch/example",
-          "note": "Pay attention to formal analysis examples"
+          "url": "https://www.youtube.com/watch?v=b2VpNx5ZxSA",
+          "note": "✏️ <u>Artifact</u> Watch the video and respond. See myClass for more information."
         }
       ]
     },
     {
-      "date": "2025-01-20",
-      "title": "Prehistoric Art: Cave Paintings to Megalithic Structures",
-      "category": "Ancient Origins",
-      "topic": "The Dawn of Human Artistic Expression",
-      "learningObjectives": [
-        "Analyze the formal qualities of Paleolithic cave paintings",
-        "Understand the cultural significance of prehistoric art",
-        "Compare different theories about the purpose of early art"
-      ],
-      "keyNotions": [
-        "Paleolithic art",
-        "Symbolic representation",
-        "Ritual and religion",
-        "Archaeological evidence"
-      ],
+      "date": "2025-9-5",
+      "title": "Introduction to Art History Methods",
+      "category": "W1",
+      "description": "Introduction to the methods and concepts of art history",
+      "keywords": ["art history", "methods", "visual analysis"],
       "readings": [
         {
-          "title": "Paleolithic Art",
-          "authors": ["Smarthistory Contributors"],
-          "source": "Smarthistory",
-          "url": "https://smarthistory.org/paleolithic-art/",
+          "title": "An excerpt from \"Fundamentals of Art History\"",
+          "authors": ["Anne D'Alleva", "Michael W. Cothren"],
+          "source": "Available on Perusall",
           "type": "core"
         },
         {
-          "title": "Lascaux Cave Paintings",
-          "authors": ["Smarthistory Contributors"],
-          "source": "Smarthistory",
-          "url": "https://smarthistory.org/lascaux/",
+          "title": "Making the Most of Learning with Perusall",
+          "authors": ["Perusall Team"],
+          "source": "Available on Perusall",
           "type": "core"
         },
         {
-          "title": "The Mind in the Cave: Art and Spirituality",
-          "authors": ["David Lewis-Williams"],
-          "source": "Perusall",
-          "type": "analytical",
-          "note": "Chapter 2: Focus on neuropsychological model of cave art"
+          "title": "\"Want to Save Democracy? Teach Art History.\"",
+          "authors": ["Sarah Rogers Morris"],
+          "source": "Available on Perusall",
+          "type": "analytical"
         }
       ],
       "media": [
         {
-          "title": "Cave Art: Discovering Prehistoric Humans",
-          "type": "documentary",
-          "duration": "45 mins",
-          "source": "National Geographic",
-          "note": "Watch sections on Lascaux and Altamira"
+          "title": "\"Why You Don't Like Art History\"",
+          "type": "video",
+          "duration": "9 mins",
+          "source": "The Art Assignment",
+          "url": "https://youtu.be/ajCHdtfn_U4"
         },
         {
-          "title": "Virtual Tour of Lascaux Cave",
+          "title": "How to do Visual (Formal) Analysis in Art History",
+          "type": "video",
+          "duration": "10 mins",
+          "source": "Smarthistory",
+          "url": "https://www.youtube.com/watch?v=sM2MOyonDsY"
+        }
+      ]
+    },
+    {
+      "date": "2025-9-10",
+      "title": "Cave Paintings and Figurines",
+      "description": "Exploring early human artistic expression through cave paintings and small sculptures",
+      "category": "W2",
+      "topic": "Prehistoric Art",
+      "keywords": ["Paleolithic", "cave paintings", "Venus figurines", "Lascaux", "Altamira"],
+      "readings": [
+        {
+          "title": "Paleolithic Art, An Introduction",
+          "authors": ["Beth Harris", "Steven Zucker"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/paleolithic-art-an-introduction/?sidebar=europe-before-1000-b-c-e",
+          "type": "core"
+        },
+        {
+          "title": "Venus of Willendorf",
+          "authors": ["Bryan Zygmont"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/venus-of-willendorf/?sidebar=europe-before-1000-b-c-e",
+          "type": "core"
+        }
+    
+      ]
+    },
+    {
+      "date": "2025-9-12",
+      "title": "The Agricultural Revolution",
+      "description": "Exploring the transition from nomadic lifestyles to settled farming communities",
+      "keywords": ["Neolithic", "agriculture", "settlement", "megaliths", "Göbeklitepe", "Çatalhöyük"],
+      "category": "W2",
+      "readings": [
+        {
+          "title": "The Neolithic Revolution",
+          "authors": ["Senta German"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/the-neolithic-revolution/?sidebar=europe-before-1000-b-c-e",
+          "type": "core"
+        },
+        {
+          "title": "Gobekli Tepe: The World’s First Temple?",
+          "authors": ["J. Thurman"],
+          "source": "Available on Perusall",
+          "url": "https://www.smithsonianmag.com/history/gobekli-tepe-the-worlds-first-temple-83613665/",
+          "type": "analytical"
+        }
+      ],
+      "media": []
+    },
+    {
+      "date": "2025-9-17",
+      "title": "The Rise of Mesopotamia",
+      "category": "W3",
+      "description": "Exploring the development of urban centers, writing, and art in ancient Mesopotamia",
+      "keywords": ["Mesopotamia", "Sumer", "urbanization", "cuneiform", "ziggurats"],
+      "readings": [
+        {
+          "title": "Standing Male Worshipper (Tell Asmar)",
+          "authors": ["Senta German"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/standing-male-worshipper-from-the-square-temple-at-eshnunna-tell-asmar/?sidebar=asia-before-1000-b-c-e",
+          "type": "core"
+        },
+        {
+          "title": "Warka Vase",
+          "authors": ["Senta German"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/warka-vase/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Writing Cuneiform",
+          "type": "video", 
+          "source": "Getty",
+          "url": "https://youtu.be/HbZ2asfyHcA"
+        }
+      ]
+    },
+    {
+      "date": "2025-9-19",
+      "title": "Akkadian Kingship and the First Monuments",
+      "category": "W3",
+      "description": "Examining the role of kingship in Akkadian society and the significance of monumental art",
+      "keywords": ["Akkadian art", "kingship", "monuments", "royal representation"],
+      "readings": [
+        {
+          "title": "Akhenaten",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/akhenaten/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Victory Stele of Naram-Sin",
+          "authors": ["Beth Harris", "Steven Zucker"],
+          "source": "Smarthistory",
+          "url": "https://youtu.be/OY79AuGZDNI",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "date": "2025-9-24",
+      "title": "Ancient Greek Art: Archaic and Classical Periods",
+      "category": "W4",
+      "topic": "Ancient Greece",
+      "description": "Introduction to Greek art from the Archaic through Classical periods, focusing on sculpture and pottery",
+      "keywords": ["Greek sculpture", "kouroi", "contrapposto", "red-figure pottery"],
+      "readings": [
+        {
+          "title": "Ancient Greece",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/ancient-greece/",
+          "type": "core"
+        },
+        {
+          "title": "Doryphoros (Spear Bearer)",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/doryphoros-spear-bearer/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Greek Art: Classical Period",
+          "type": "video",
+          "duration": "10 mins",
+          "source": "Smarthistory",
+          "url": "https://youtu.be/ZvWjwrR5-3I"
+        }
+      ]
+    },
+    {
+      "date": "2025-9-26",
+      "title": "Greek Architecture: The Orders and the Parthenon",
+      "category": "W4",
+      "topic": "Ancient Greece",
+      "description": "Exploring Greek architectural orders and the Parthenon as a masterpiece of Classical architecture",
+      "keywords": ["Doric", "Ionic", "Corinthian", "Parthenon", "Acropolis"],
+      "readings": [
+        {
+          "title": "The Parthenon, Athens",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/the-parthenon-athens/",
+          "type": "core"
+        },
+        {
+          "title": "Introduction to Greek architecture",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-greek-architecture/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Architecture of the Parthenon",
+          "type": "video",
+          "duration": "15 mins",
+          "source": "TED-Ed",
+          "url": "https://youtu.be/VaUuN1ht6-Y",
+          "note": "✏️ <u>Artifact</u> Sketch and label the three Greek orders with their key characteristics."
+        }
+      ]
+    },
+    {
+      "date": "2025-10-1",
+      "title": "Roman Art: Republic to Empire",
+      "category": "W5",
+      "topic": "Ancient Rome",
+      "description": "Transition from Greek to Roman art, examining portraiture and narrative relief sculpture",
+      "keywords": ["Roman portraiture", "verism", "imperial art", "narrative relief"],
+      "readings": [
+        {
+          "title": "Roman art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/roman-art/",
+          "type": "core"
+        },
+        {
+          "title": "Augustus of Prima Porta",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/augustus-of-prima-porta/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Roman Engineering and Architecture",
           "type": "video",
           "duration": "12 mins",
-          "source": "Lascaux Official",
-          "url": "https://www.lascaux.fr/en/virtual-tour"
+          "source": "Crash Course",
+          "url": "https://youtu.be/0LPdIlqbYK8"
         }
       ]
     },
     {
-      "weekNumber": 3,
-      "date": "2025-01-27",
-      "title": "Ancient Mesopotamia: Cradle of Civilization",
-      "category": "Ancient Near East",
-      "topic": "Sumerian, Babylonian, and Assyrian Art",
-      "learningObjectives": [
-        "Identify key characteristics of Mesopotamian art and architecture",
-        "Understand the role of art in ancient Mesopotamian society",
-        "Analyze the evolution of artistic styles across different periods"
-      ],
-      "keyNotions": [
-        "Ziggurat architecture",
-        "Cuneiform writing",
-        "Divine kingship",
-        "Narrative relief sculpture"
-      ],
+      "date": "2025-10-3",
+      "title": "Roman Architecture: Innovation and Engineering",
+      "category": "W5",
+      "topic": "Ancient Rome",
+      "description": "Roman architectural innovations including the arch, dome, and concrete construction",
+      "keywords": ["Roman arch", "Pantheon", "Colosseum", "concrete", "basilica"],
       "readings": [
         {
-          "title": "Ancient Mesopotamia",
+          "title": "The Pantheon, Rome",
           "authors": ["Smarthistory Contributors"],
           "source": "Smarthistory",
-          "url": "https://smarthistory.org/ancient-mesopotamia/",
+          "url": "https://smarthistory.org/the-pantheon-rome/",
           "type": "core"
         },
         {
-          "title": "The Standard of Ur",
+          "title": "Introduction to ancient Roman architecture",
           "authors": ["Smarthistory Contributors"],
           "source": "Smarthistory",
-          "url": "https://smarthistory.org/standard-of-ur/",
+          "url": "https://smarthistory.org/introduction-to-ancient-roman-architecture/",
           "type": "core"
         }
       ],
       "media": [
         {
-          "title": "Mesopotamia: Return to Eden",
-          "type": "documentary",
-          "duration": "1 hour",
+          "title": "How the Pantheon Was Built",
+          "type": "video",
+          "duration": "8 mins",
+          "source": "Vox",
+          "url": "https://youtu.be/PQfUOdBGr9k",
+          "note": "✏️ <u>Artifact</u> Design a modern building inspired by Roman architectural principles."
+        }
+      ]
+    },
+    {
+      "date": "2025-10-8",
+      "title": "Early Christian and Byzantine Art",
+      "category": "W6",
+      "topic": "Early Christian & Byzantine",
+      "description": "The emergence of Christian art and its development in the Byzantine Empire",
+      "keywords": ["Early Christian", "Byzantine", "mosaics", "iconoclasm", "Hagia Sophia"],
+      "readings": [
+        {
+          "title": "Early Christian art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/early-christian-art/",
+          "type": "core"
+        },
+        {
+          "title": "Hagia Sophia, Istanbul",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/hagia-sophia-istanbul/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Byzantine Mosaics at Ravenna",
+          "type": "video",
+          "duration": "14 mins",
+          "source": "Smarthistory",
+          "url": "https://youtu.be/KL7PgWBXILQ"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-10",
+      "title": "Islamic Art and Architecture",
+      "category": "W6",
+      "topic": "Islamic Art",
+      "description": "Introduction to Islamic artistic traditions, calligraphy, and architectural innovations",
+      "keywords": ["Islamic art", "calligraphy", "geometric patterns", "mosque architecture", "mihrab"],
+      "readings": [
+        {
+          "title": "Introduction to Islamic art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-islamic-art/",
+          "type": "core"
+        },
+        {
+          "title": "The Great Mosque of Cordoba",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/the-great-mosque-of-cordoba/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Islamic Geometric Patterns",
+          "type": "video",
+          "duration": "10 mins",
+          "source": "The Art Assignment",
+          "url": "https://youtu.be/ng7rlgSMc5w",
+          "note": "✏️ <u>Artifact</u> Create your own geometric pattern using Islamic design principles."
+        }
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "title": "Medieval European Art: Romanesque",
+      "category": "W7",
+      "topic": "Medieval Europe",
+      "description": "The development of Romanesque style in architecture, sculpture, and manuscript illumination",
+      "keywords": ["Romanesque", "pilgrimage", "tympanum", "manuscript illumination", "monasteries"],
+      "readings": [
+        {
+          "title": "Romanesque art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/romanesque-art/",
+          "type": "core"
+        },
+        {
+          "title": "Sainte-Foy, Conques",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/sainte-foy-conques/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Medieval Manuscripts",
+          "type": "video",
+          "duration": "11 mins",
+          "source": "Getty Museum",
+          "url": "https://youtu.be/nuNfdHNTv9o"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-17",
+      "title": "Medieval European Art: Gothic",
+      "category": "W7",
+      "topic": "Medieval Europe",
+      "description": "The Gothic revolution in architecture and its spread across Europe",
+      "keywords": ["Gothic", "flying buttress", "rose window", "cathedral", "Notre-Dame"],
+      "readings": [
+        {
+          "title": "Gothic art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/gothic-art/",
+          "type": "core"
+        },
+        {
+          "title": "Chartres Cathedral",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/chartres-cathedral/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Gothic Architecture Explained",
+          "type": "video",
+          "duration": "13 mins",
+          "source": "TEDx",
+          "url": "https://youtu.be/4j3X7VdvRrg",
+          "note": "📝 <u>Assignment Due</u> Comparative Analysis Essay - Compare a Romanesque and Gothic cathedral (500-750 words)"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-22",
+      "title": "Chinese Art: Ancient to Medieval",
+      "category": "W8",
+      "topic": "East Asian Art",
+      "description": "Survey of Chinese art from ancient bronze vessels to landscape painting traditions",
+      "keywords": ["Chinese art", "bronze vessels", "landscape painting", "calligraphy", "Buddhism"],
+      "readings": [
+        {
+          "title": "Introduction to Chinese art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-chinese-art/",
+          "type": "core"
+        },
+        {
+          "title": "The Terracotta Army",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/the-terracotta-army/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Chinese Landscape Painting Philosophy",
+          "type": "video",
+          "duration": "9 mins",
+          "source": "The Art Assignment",
+          "url": "https://youtu.be/6btFObRRD9k"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-24",
+      "title": "Japanese Art: Shinto to Buddhism",
+      "category": "W8",
+      "topic": "East Asian Art",
+      "description": "Introduction to Japanese artistic traditions, from Shinto shrines to Buddhist temples",
+      "keywords": ["Japanese art", "Shinto", "Buddhist temples", "pagoda", "woodblock prints"],
+      "readings": [
+        {
+          "title": "Introduction to Japanese art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-japanese-art/",
+          "type": "core"
+        },
+        {
+          "title": "Ise Jingu",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/ise-jingu/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Japanese Temple Architecture",
+          "type": "video",
+          "duration": "12 mins",
+          "source": "NHK World",
+          "url": "https://youtu.be/Rv4nI3q6Va8",
+          "note": "✏️ <u>Artifact</u> Compare Chinese and Japanese architectural elements in a visual presentation."
+        }
+      ]
+    },
+    {
+      "date": "2025-10-29",
+      "title": "Indian Art: Hindu and Buddhist Traditions",
+      "category": "W9",
+      "topic": "South Asian Art",
+      "description": "Exploring the artistic traditions of ancient India, focusing on Hindu and Buddhist art",
+      "keywords": ["Indian art", "Hindu temples", "Buddhist art", "Gupta period", "sculpture"],
+      "readings": [
+        {
+          "title": "Introduction to the arts of South Asia",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-the-arts-of-south-asia/",
+          "type": "core"
+        },
+        {
+          "title": "Hinduism and Hindu art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/hinduism-and-hindu-art/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Ajanta Cave Paintings",
+          "type": "video",
+          "duration": "15 mins",
+          "source": "UNESCO",
+          "url": "https://youtu.be/cDuJHWRpBqo"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-31",
+      "title": "Southeast Asian Art: Temples and Traditions",
+      "category": "W9",
+      "topic": "Southeast Asian Art",
+      "description": "Art and architecture of Southeast Asia, including Angkor Wat and Borobudur",
+      "keywords": ["Southeast Asian art", "Angkor Wat", "Borobudur", "Khmer art", "Javanese art"],
+      "readings": [
+        {
+          "title": "Introduction to Southeast Asian art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-southeast-asian-art/",
+          "type": "core"
+        },
+        {
+          "title": "Angkor Wat",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/angkor-wat/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Borobudur: Ancient Wonder",
+          "type": "video",
+          "duration": "10 mins",
+          "source": "Discovery",
+          "url": "https://youtu.be/kSA7SW4a1JE",
+          "note": "✏️ <u>Artifact</u> Create a mandala inspired by Buddhist temple designs."
+        }
+      ]
+    },
+    {
+      "date": "2025-11-5",
+      "title": "Pre-Columbian Art: Mesoamerica",
+      "category": "W10",
+      "topic": "Pre-Columbian Americas",
+      "description": "Art and architecture of Mesoamerican civilizations: Maya, Aztec, and Olmec",
+      "keywords": ["Mesoamerican art", "Maya", "Aztec", "Olmec", "pyramid", "codex"],
+      "readings": [
+        {
+          "title": "Introduction to the Olmec",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-the-olmec/",
+          "type": "core"
+        },
+        {
+          "title": "Maya art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/maya-art/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Secrets of Maya Civilization",
+          "type": "video",
+          "duration": "14 mins",
           "source": "History Channel",
-          "note": "Focus on art and architecture segments"
+          "url": "https://youtu.be/yl2Dh0DQwAw"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-7",
+      "title": "Pre-Columbian Art: Andean Civilizations",
+      "category": "W10",
+      "topic": "Pre-Columbian Americas",
+      "description": "Art and architecture of Andean civilizations: Inca, Moche, and Nazca",
+      "keywords": ["Andean art", "Inca", "Moche", "Nazca lines", "textiles", "metalwork"],
+      "readings": [
+        {
+          "title": "Introduction to Andean cultures",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-andean-cultures/",
+          "type": "core"
+        },
+        {
+          "title": "Machu Picchu",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/machu-picchu/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Inca Engineering Marvels",
+          "type": "video",
+          "duration": "11 mins",
+          "source": "Smithsonian",
+          "url": "https://youtu.be/M7iMQ0BVYtY",
+          "note": "✏️ <u>Artifact</u> Compare pre-Columbian and Old World pyramid construction techniques."
+        }
+      ]
+    },
+    {
+      "date": "2025-11-19",
+      "title": "African Art: Traditional and Court Arts",
+      "category": "W11",
+      "topic": "African Art",
+      "description": "Survey of traditional African art forms, including sculpture, masks, and court arts",
+      "keywords": ["African art", "masks", "sculpture", "court arts", "Benin bronzes", "textiles"],
+      "readings": [
+        {
+          "title": "Introduction to African art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-african-art/",
+          "type": "core"
+        },
+        {
+          "title": "Benin Bronzes",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/benin-bronzes/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "African Art and Identity",
+          "type": "video",
+          "duration": "12 mins",
+          "source": "Museum of Fine Arts Boston",
+          "url": "https://youtu.be/bAYF5r5nK4s"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-21",
+      "title": "Oceanic Art: Pacific Island Traditions",
+      "category": "W11",
+      "topic": "Oceanic Art",
+      "description": "Art traditions of the Pacific Islands, including Polynesia, Melanesia, and Micronesia",
+      "keywords": ["Oceanic art", "Polynesia", "Melanesia", "Easter Island", "masks", "navigation charts"],
+      "readings": [
+        {
+          "title": "Introduction to Oceanic art",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/introduction-to-oceanic-art/",
+          "type": "core"
+        },
+        {
+          "title": "Easter Island (Rapa Nui)",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/easter-island-rapa-nui/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Moai Statues Mystery",
+          "type": "video",
+          "duration": "13 mins",
+          "source": "National Geographic",
+          "url": "https://youtu.be/7mVz4p5F4ok",
+          "note": "✏️ <u>Artifact</u> Design a contemporary artwork that incorporates traditional Oceanic motifs."
+        }
+      ]
+    },
+    {
+      "date": "2025-11-26",
+      "title": "Proto-Renaissance: Transition from Medieval to Renaissance",
+      "category": "W12",
+      "topic": "Proto-Renaissance",
+      "description": "The emergence of Renaissance ideals in 13th-14th century Italy with Giotto and others",
+      "keywords": ["Proto-Renaissance", "Giotto", "naturalism", "humanism", "perspective"],
+      "readings": [
+        {
+          "title": "Proto-Renaissance in Italy",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/proto-renaissance-in-italy/",
+          "type": "core"
+        },
+        {
+          "title": "Giotto, Arena (Scrovegni) Chapel",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/giotto-arena-scrovegni-chapel/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Giotto's Revolution in Painting",
+          "type": "video",
+          "duration": "10 mins",
+          "source": "Smarthistory",
+          "url": "https://youtu.be/w8BZUi2iP7Y"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-28",
+      "title": "Early Renaissance: Florence and Artistic Innovation",
+      "category": "W12",
+      "topic": "Early Renaissance",
+      "description": "The flowering of Renaissance art in 15th century Florence with Brunelleschi, Donatello, and Masaccio",
+      "keywords": ["Early Renaissance", "Florence", "Brunelleschi", "Donatello", "Masaccio", "linear perspective"],
+      "readings": [
+        {
+          "title": "Florence in the Early Renaissance",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/florence-in-the-early-renaissance/",
+          "type": "core"
+        },
+        {
+          "title": "Brunelleschi, Dome of Florence Cathedral",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/brunelleschi-dome-florence-cathedral/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Renaissance Perspective",
+          "type": "video",
+          "duration": "8 mins",
+          "source": "Khan Academy",
+          "url": "https://youtu.be/v5tJrKjjzJ8",
+          "note": "✏️ <u>Artifact</u> Create a drawing demonstrating linear perspective techniques."
+        }
+      ]
+    },
+    {
+      "date": "2025-12-3",
+      "title": "Cross-Cultural Connections and Global Exchange",
+      "category": "W13",
+      "topic": "Global Connections",
+      "description": "Examining artistic exchange along trade routes and cultural interactions",
+      "keywords": ["Silk Road", "cultural exchange", "trade routes", "artistic influence", "globalization"],
+      "readings": [
+        {
+          "title": "Art along the Silk Road",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/art-along-the-silk-road/",
+          "type": "core"
+        },
+        {
+          "title": "Cross-cultural artistic exchange",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/cross-cultural-artistic-exchange/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Silk Road Cultural Exchange",
+          "type": "video",
+          "duration": "15 mins",
+          "source": "BBC",
+          "url": "https://youtu.be/vfe-eNq-Qyg"
+        }
+      ]
+    },
+    {
+      "date": "2025-12-5",
+      "title": "Ancient World in Contemporary Art",
+      "category": "W13",
+      "topic": "Contemporary Connections",
+      "description": "How contemporary artists draw inspiration from ancient art and themes",
+      "keywords": ["contemporary art", "ancient influences", "cultural heritage", "modern interpretations"],
+      "readings": [
+        {
+          "title": "Ancient art in the modern world",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/ancient-art-modern-world/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Modern Artists Inspired by Antiquity",
+          "type": "video",
+          "duration": "12 mins",
+          "source": "Metropolitan Museum",
+          "url": "https://youtu.be/2V_ueohYRc0",
+          "note": "📝 <u>Assignment Due</u> Final Essay - Ancient World in Contemporary Visual Culture (1000-1250 words)"
+        }
+      ]
+    },
+    {
+      "date": "2025-12-10",
+      "title": "Course Review and Synthesis",
+      "category": "W14",
+      "topic": "Course Synthesis",
+      "description": "Reviewing major themes, movements, and connections across global art history",
+      "keywords": ["synthesis", "review", "global art history", "cultural connections", "artistic traditions"],
+      "readings": [
+        {
+          "title": "Connecting global art histories",
+          "authors": ["Smarthistory Contributors"],
+          "source": "Smarthistory",
+          "url": "https://smarthistory.org/connecting-global-art-histories/",
+          "type": "core"
+        }
+      ],
+      "media": [
+        {
+          "title": "Student Artifact Presentations",
+          "type": "video",
+          "duration": "90 mins",
+          "source": "Class Presentations",
+          "note": "✏️ <u>Final Artifacts</u> Student presentations of their creative projects responding to course materials"
         }
       ]
     }

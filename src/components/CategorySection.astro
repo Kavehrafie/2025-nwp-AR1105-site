@@ -20,12 +20,18 @@ const { weeks } = schedule.data;
 
 // Filter weeks for this specific category
 const categoryWeeks = weeks.filter(week => (week.category || 'General') === category);
+
+// Helper function to create timezone-neutral dates
+const parseLocalDate = (dateString: string) => {
+  const [year, month, day] = dateString.split('-').map(Number);
+  return new Date(year, month - 1, day);
+};
 ---
 
 <section class="category-section" data-category={category.toLowerCase().replace(/\s+/g, '-')}>
   <div class="weeks-grid">
     {categoryWeeks
-      .sort((a, b) => a.date.getTime() - b.date.getTime())
+      .sort((a, b) => parseLocalDate(a.date).getTime() - parseLocalDate(b.date).getTime())
       .map(week => (
         <WeekItem week={week} />
       ))
